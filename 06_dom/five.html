@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+
+</head>
+<body style="background-color: aqua;">
+    <ul class="language1">
+        <li id="class">JavaScript</li>
+    </ul>
+    
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language1').
+        appendChild(li)
+    }
+    addLanguage("Python")
+    addLanguage("TypeScript")
+    addLanguage("Java")
+
+    function Language2(langy){
+        const li = document.createElement('li')
+        li.innerHTML = `${langy}`
+        document.querySelector('.language1').
+        appendChild(li)
+
+    }
+    Language2('Unknown')
+    Language2('TypesScript')
+
+    const langname2 = document.querySelector("li:nth-child(2)")
+    console.log(langname2);
+    
+    //edit list
+    const newlist = document.createElement('li')
+    newlist.textContent = "node.js"
+    langname2.replaceWith(newlist);
+    langname2.innerHTML = addEventListener('click' , function(e){
+        console.log("clicked");
+
+    },false)
+
+    document.getElementById('class').onclick = function(){
+        alert('clicked')
+    }
+
+    function language3(langy2){
+        const li = document.createElement('li')
+        li.innerHTML = `${langy2}`
+        document.querySelector('.language1').
+        appendChild(li)
+    }
+    language3("Teri maa ki aankh")
+
+    // const newList1 = document.createElement('li')
+    // newList1.textContent = "Adbhut"
+    // language3.replaceWith(newList1)
+    language3.innerHTML = addEventListener('click', function(e){
+        console.log("Yes you did it");
+    })
+
+</script>
+</html>
